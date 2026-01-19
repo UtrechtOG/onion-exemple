@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>exemple</title>
+
+<style>
+/* Grundfarben */
+body {
+    margin: 0;
+    font-family: Courier, monospace;
+    background: #ffeb00;
+    color: #000;
+    text-align: center;
+}
+
+/* Header */
+header {
+    padding: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    border-bottom: 3px solid #000;
+}
+
+/* Subtitle unter Site Name */
+header p {
+    font-size: 16px;
+    margin: 10px 0 0 0;
+}
+
+/* URL line */
+.url-line {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Highlight URL box */
+.url-box {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid #000;
+    background: #fff;
+    cursor: text;
+}
+
+/* Grid for products */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Product box */
+.product {
+    border: 2px solid #000;
+    padding: 20px;
+    background: #ffeb00;
+    text-decoration: none;
+    color: #000;
+}
+
+.product:hover {
+    background: #ffe000;
+}
+
+/* Detail view */
+.detail {
+    display: none;
+    max-width: 600px;
+    margin: 40px auto;
+    border: 3px solid #000;
+    padding: 20px;
+    background: #ffeb00;
+}
+
+.detail:target {
+    display: block;
+}
+
+/* Back link */
+.back {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    border: 2px solid #000;
+    padding: 10px;
+    color: #000;
+}
+
+/* Footer / Contact */
+footer {
+    border-top: 3px solid #000;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    exemple
+    <p>Your digital art gallery – simple, clean, timeless.</p>
+    <div class="url-line">
+        <span class="url-box">www.exemple.com</span> <!-- Manuell markieren & kopieren -->
+    </div>
+</header>
+
+<!-- PRODUCTS -->
+<div class="products">
+    <a href="#p1" class="product">Exemple Product 1</a>
+    <a href="#p2" class="product">Exemple Product 2</a>
+    <a href="#p3" class="product">Exemple Product 3</a>
+    <a href="#p4" class="product">Exemple Product 4</a>
+    <a href="#p5" class="product">Exemple Product 5</a>
+    <a href="#p6" class="product">Exemple Product 6</a>
+    <a href="#p7" class="product">Exemple Product 7</a>
+    <a href="#p8" class="product">Exemple Product 8</a>
+    <a href="#p9" class="product">Exemple Product 9</a>
+    <a href="#p10" class="product">Exemple Product 10</a>
+    <a href="#p11" class="product">Exemple Product 11</a>
+    <a href="#p12" class="product">Exemple Product 12</a>
+    <a href="#p13" class="product">Exemple Product 13</a>
+    <a href="#p14" class="product">Exemple Product 14</a>
+    <a href="#p15" class="product">Exemple Product 15</a>
+</div>
+
+<!-- DETAIL VIEWS -->
+<div id="p1" class="detail">
+    <h2>Exemple Product 1</h2>
+    <p>This is a sample digital artwork. Minimalist, unique, no distractions.</p>
+    <p><strong>Contact:</strong> Threema ID: XY12345 | BTC: 1ExampleBTCAddress123</p>
+    <a href="#" class="back">Back</a>
+</div>
+
+<div id="p2" class="detail">
+    <h2>Exemple Product 2</h2>
+    <p>Another sample piece. Modern style, clean lines, text only.</p>
+    <p><strong>Contact:</strong> Threema ID: XY12345 | BTC: 1ExampleBTCAddress123</p>
+    <a href="#" class="back">Back</a>
+</div>
+
+<!-- Weitere Produkte p3–p15 können nach dem gleichen Muster kopiert werden -->
+
+<footer>
+    © 2026 exemple. All rights reserved.
+</footer>
+
+</body>
+      </html>
