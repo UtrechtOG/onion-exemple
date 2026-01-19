@@ -5,31 +5,29 @@
 <title>exemple</title>
 
 <style>
-/* Grundfarben */
 body {
     margin: 0;
-    font-family: Courier, monospace;
-    background: #fff;  /* weißer Hintergrund */
-    color: #000;       /* schwarze Schrift */
+    font-family: "Courier New", monospace;
+    background: #fff;
+    color: #000;
     text-align: center;
 }
 
-/* Header */
 header {
     padding: 30px;
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bold;
-    border-bottom: 3px solid #ffeb00; /* gelbe Linie */
-    color: red; /* Website Name rot */
+    border-bottom: 3px solid #ffeb00;
+    color: red;
+    letter-spacing: 2px;
 }
 
 header p {
     font-size: 16px;
     margin: 10px 0 0 0;
-    color: #000; /* Beschreibung schwarz */
+    color: #000;
 }
 
-/* URL line */
 .url-line {
     font-size: 12px;
     margin-top: 5px;
@@ -38,69 +36,72 @@ header p {
 .url-box {
     display: inline-block;
     padding: 5px 10px;
-    border: 2px solid #ffeb00; /* gelbe Linie */
+    border: 2px solid #ffeb00;
     background: #fff;
-    color: red; /* URL rot */
+    color: red;
     cursor: text;
 }
 
-/* Grid for products - 2 per row */
 .products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px; /* nah zusammen */
+    gap: 15px;
     padding: 20px;
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
 }
 
-/* Product box */
 .product {
-    border: 2px solid #ffeb00; /* gelbe Linie */
-    padding: 20px;
+    border: 2px solid #ffeb00;
+    padding: 40px 20px;
+    min-height: 120px;
     background: #fff;
     text-decoration: none;
     color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.2s;
 }
 
 .product:hover {
-    background: #fff8c0; /* leichtes Gelb beim Hover */
+    background: #fff8c0;
+    cursor: pointer;
 }
 
-/* Detail view */
 .detail {
     display: none;
     max-width: 600px;
     margin: 40px auto;
-    border: 3px solid #ffeb00; /* gelbe Linie */
-    padding: 20px;
+    border: 3px solid #ffeb00;
+    padding: 30px;
     background: #fff;
+    text-align: left;
 }
 
 .detail:target {
     display: block;
 }
 
-/* Back link */
 .back {
     display: inline-block;
     margin-top: 20px;
     text-decoration: none;
-    border: 2px solid #ffeb00; /* gelbe Linie */
-    padding: 10px;
+    border: 2px solid #ffeb00;
+    padding: 10px 20px;
     color: #000;
 }
 
-/* Footer / Contact */
 footer {
-    border-top: 3px solid #ffeb00; /* gelbe Linie */
+    border-top: 3px solid #ffeb00;
     padding: 20px;
     margin-top: 40px;
     font-size: 14px;
 }
 </style>
 </head>
-
 <body>
 
 <header>
@@ -111,7 +112,6 @@ footer {
     </div>
 </header>
 
-<!-- PRODUCTS -->
 <div class="products">
     <a href="#p1" class="product">Exemple Product 1</a>
     <a href="#p2" class="product">Exemple Product 2</a>
@@ -130,22 +130,111 @@ footer {
     <a href="#p15" class="product">Exemple Product 15</a>
 </div>
 
-<!-- DETAIL VIEWS -->
+<!-- Detailseiten mit unterschiedlichen Texten -->
 <div id="p1" class="detail">
     <h2>Exemple Product 1</h2>
-    <p>This is a sample digital artwork. Minimalist, unique, no distractions.</p>
+    <p>A dark abstract piece representing the complexity of human thought. Purely digital creation.</p>
     <p><strong>Contact:</strong> Threema ID: XY12345 | BTC: 1ExampleBTCAddress123</p>
     <a href="#" class="back">Back</a>
 </div>
 
 <div id="p2" class="detail">
     <h2>Exemple Product 2</h2>
-    <p>Another sample piece. Modern style, clean lines, text only.</p>
+    <p>Minimalist line art exploring the tension between chaos and order. Black and white only.</p>
     <p><strong>Contact:</strong> Threema ID: XY12345 | BTC: 1ExampleBTCAddress123</p>
     <a href="#" class="back">Back</a>
 </div>
 
-<!-- Weitere Produkte p3–p15 können identisch nach diesem Muster ergänzt werden -->
+<div id="p3" class="detail">
+    <h2>Exemple Product 3</h2>
+    <p>A glitch-inspired piece, evoking the feeling of lost data and digital decay.</p>
+    <p><strong>Contact:</strong> Threema ID: XY12345 | BTC: 1ExampleBTCAddress123</p>
+    <a href="#" class="back">Back</a>
+</div>
+
+<div id="p4" class="detail">
+    <h2>Exemple Product 4</h2>
+    <p>Futuristic minimalism: clean shapes, strong contrasts, and an empty space feel.</p>
+    <p><strong>Contact:</strong> Threema ID: XY12345 | BTC: 1ExampleBTCAddress123</p>
+    <a href="#" class="back">Back</a>
+</div>
+
+<div id="p5" class="detail">
+    <h2>Exemple Product 5</h2>
+    <p>Experimental typography combined with abstract digital textures for visual tension.</p>
+    <p><strong>Contact:</strong> Threema ID: XY12345 | BTC: 1ExampleBTCAddress123</p>
+    <a href="#" class="back">Back</a>
+</div>
+
+<div id="p6" class="detail">
+    <h2>Exemple Product 6</h2>
+    <p>A dark corridor perspective, reminiscent of cyberpunk cityscapes at night.</p>
+    <p><strong>Contact:</strong> Threema ID: XY12345 | BTC: 1ExampleBTCAddress123</p>
+    <a href="#" class="back">Back</a>
+</div>
+
+<div id="p7" class="detail">
+    <h2>Exemple Product 7</h2>
+    <p>Abstract data visualization inspired art, exploring patterns in digital signals.</p>
+    <p><strong>Contact:</strong> Threema ID: XY12345 | BTC: 1ExampleBTCAddress123</p>
+    <a href="#" class="back">Back</a>
+</div>
+
+<div id="p8" class="detail">
+    <h2>Exemple Product 8</h2>
+    <p>Black-and-white digital sketch capturing urban loneliness in the information age.</p>
+    <p><strong>Contact:</strong> Threema ID: XY12345 | BTC: 1ExampleBTCAddress123</p>
+    <a href="#" class="back">Back</a>
+</div>
+
+<div id="p9" class="detail">
+    <h2>Exemple Product 9</h2>
+    <p>Fragmented geometric shapes forming a surreal, data-inspired composition.</p>
+    <p><strong>Contact:</strong> Threema ID: XY12345 | BTC: 1ExampleBTCAddress123</p>
+    <a href="#" class="back">Back</a>
+</div>
+
+<div id="p10" class="detail">
+    <h2>Exemple Product 10</h2>
+    <p>Digital shadows and gradients creating a sense of hidden depth in minimal space.</p>
+    <p><strong>Contact:</strong> Threema ID: XY12345 | BTC: 1ExampleBTCAddress123</p>
+    <a href="#" class="back">Back</a>
+</div>
+
+<div id="p11" class="detail">
+    <h2>Exemple Product 11</h2>
+    <p>Abstract network visualization, inspired by neural connections and cyber grids.</p>
+    <p><strong>Contact:</strong> Threema ID: XY12345 | BTC: 1ExampleBTCAddress123</p>
+    <a href="#" class="back">Back</a>
+</div>
+
+<div id="p12" class="detail">
+    <h2>Exemple Product 12</h2>
+    <p>Minimalist dark shapes with subtle yellow highlights, evoking secrecy and code.</p>
+    <p><strong>Contact:</strong> Threema ID: XY12345 | BTC: 1ExampleBTCAddress123</p>
+    <a href="#" class="back">Back</a>
+</div>
+
+<div id="p13" class="detail">
+    <h2>Exemple Product 13</h2>
+    <p>Cyber-inspired abstract art focusing on digital decay and glitch aesthetics.</p>
+    <p><strong>Contact:</strong> Threema ID: XY12345 | BTC: 1ExampleBTCAddress123</p>
+    <a href="#" class="back">Back</a>
+</div>
+
+<div id="p14" class="detail">
+    <h2>Exemple Product 14</h2>
+    <p>High-contrast composition exploring light and shadow in a digital context.</p>
+    <p><strong>Contact:</strong> Threema ID: XY12345 | BTC: 1ExampleBTCAddress123</p>
+    <a href="#" class="back">Back</a>
+</div>
+
+<div id="p15" class="detail">
+    <h2>Exemple Product 15</h2>
+    <p>A mysterious abstract piece, inspired by encrypted codes and hidden messages.</p>
+    <p><strong>Contact:</strong> Threema ID: XY12345 | BTC: 1ExampleBTCAddress123</p>
+    <a href="#" class="back">Back</a>
+</div>
 
 <footer>
     © 2026 exemple. All rights reserved.
