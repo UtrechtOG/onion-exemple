@@ -9,8 +9,8 @@
 body {
     margin: 0;
     font-family: Courier, monospace;
-    background: #ffeb00;
-    color: #000;
+    background: #fff;  /* weißer Hintergrund */
+    color: #000;       /* schwarze Schrift */
     text-align: center;
 }
 
@@ -19,13 +19,14 @@ header {
     padding: 30px;
     font-size: 32px;
     font-weight: bold;
-    border-bottom: 3px solid #000;
+    border-bottom: 3px solid #ffeb00; /* gelbe Linie */
+    color: red; /* Website Name rot */
 }
 
-/* Subtitle unter Site Name */
 header p {
     font-size: 16px;
     margin: 10px 0 0 0;
+    color: #000; /* Beschreibung schwarz */
 }
 
 /* URL line */
@@ -34,36 +35,36 @@ header p {
     margin-top: 5px;
 }
 
-/* Highlight URL box */
 .url-box {
     display: inline-block;
     padding: 5px 10px;
-    border: 2px solid #000;
+    border: 2px solid #ffeb00; /* gelbe Linie */
     background: #fff;
+    color: red; /* URL rot */
     cursor: text;
 }
 
-/* Grid for products */
+/* Grid for products - 2 per row */
 .products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; /* nah zusammen */
     padding: 20px;
-    max-width: 900px;
+    max-width: 500px;
     margin: auto;
 }
 
 /* Product box */
 .product {
-    border: 2px solid #000;
+    border: 2px solid #ffeb00; /* gelbe Linie */
     padding: 20px;
-    background: #ffeb00;
+    background: #fff;
     text-decoration: none;
     color: #000;
 }
 
 .product:hover {
-    background: #ffe000;
+    background: #fff8c0; /* leichtes Gelb beim Hover */
 }
 
 /* Detail view */
@@ -71,9 +72,9 @@ header p {
     display: none;
     max-width: 600px;
     margin: 40px auto;
-    border: 3px solid #000;
+    border: 3px solid #ffeb00; /* gelbe Linie */
     padding: 20px;
-    background: #ffeb00;
+    background: #fff;
 }
 
 .detail:target {
@@ -85,14 +86,14 @@ header p {
     display: inline-block;
     margin-top: 20px;
     text-decoration: none;
-    border: 2px solid #000;
+    border: 2px solid #ffeb00; /* gelbe Linie */
     padding: 10px;
     color: #000;
 }
 
 /* Footer / Contact */
 footer {
-    border-top: 3px solid #000;
+    border-top: 3px solid #ffeb00; /* gelbe Linie */
     padding: 20px;
     margin-top: 40px;
     font-size: 14px;
@@ -106,7 +107,7 @@ footer {
     exemple
     <p>Your digital art gallery – simple, clean, timeless.</p>
     <div class="url-line">
-        <span class="url-box">www.exemple.com</span> <!-- Manuell markieren & kopieren -->
+        <span class="url-box">www.exemple.com</span>
     </div>
 </header>
 
@@ -144,11 +145,11 @@ footer {
     <a href="#" class="back">Back</a>
 </div>
 
-<!-- Weitere Produkte p3–p15 können nach dem gleichen Muster kopiert werden -->
+<!-- Weitere Produkte p3–p15 können identisch nach diesem Muster ergänzt werden -->
 
 <footer>
     © 2026 exemple. All rights reserved.
 </footer>
 
 </body>
-      </html>
+</html>
